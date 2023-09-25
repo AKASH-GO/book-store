@@ -33,8 +33,8 @@ app.post("/books", (req,res) => {
      const values = [
         req.body.title,
         req.body.des,
-        req.body.cover 
-     ]
+        req.body.cover, 
+     ];
 
     // query for the values
     db.query(q,[values], (err,data) => {
